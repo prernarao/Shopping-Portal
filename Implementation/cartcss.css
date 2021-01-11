@@ -1,0 +1,94 @@
+
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid grey;
+  padding: 20px 30px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+/* Buttons -  Delete and Like */
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+
+
+/* Product Image */
+.image {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* Product Description */
+.description {
+  padding-top: 2%;
+  margin-right: 4%;
+  width: 90%;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+}
+
+
+/* Product Quantity */
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  border: none;
+  text-align: center;
+  width: 12%;
+}
+
+button {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+
+  padding: 1px 10px;
+  cursor: pointer;
+  background-color: lightgray;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+
+/* Total Price */
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}

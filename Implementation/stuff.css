@@ -1,0 +1,182 @@
+#cart a{
+    background-color: red;
+    position: absolute;
+    right:100px;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.nav li.dropdown {
+    display: inline-block;
+}
+
+.nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.nav .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.nav .dropdown-content a:hover {background-color: #ccc}
+
+.nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+.nav {
+    /*overflow: hidden;*/
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 20%;
+    margin-top: 3.8%;
+    background-color: #111;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar li a {
+    display: block;
+    color: white;
+    padding: 8px 0 8px 16px;
+    text-decoration: none;
+}
+
+.sidebar li a.active {
+    background-color: blue;
+    color: white;
+}
+
+.sidebar li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+.content1{max-width:980px;margin:auto}
+
+.blk {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 1% 1%;margin: 0.5% 1%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)!important;
+    width:22%;
+    height:39%;
+    border-radius: 20px;
+}
+
+.blk img{
+    width:100%;
+    height:90%;
+    border-radius: 10px;
+}
+.main{
+    background-color: #222;
+    height:100%;
+
+    margin-top: 3.8%;
+    position:fixed;
+    margin-left:20%;padding:0px 16px; /* Add a top margin to avoid content overlay */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    color:red;
+}
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    color:#0066cc;
+    font-weight: bold;
+}
+
+.centered {
+    position: absolute;
+    top:110%;
+    left: 50%;
+    width:100%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 4%; /* Location of the box */
+    padding-bottom: 2%;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: black;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 750px;
+    border-radius: 10px;
+}

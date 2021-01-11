@@ -1,0 +1,390 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="stuff.css">
+<style>
+
+body {margin:0;}
+.before {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.before span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.before span:after {
+  content: '«';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: 0px;
+  transition: 0.5s;
+}
+
+.before:hover span {
+  padding-left: 25px;
+}
+
+.before:hover span:after {
+  opacity: 1;
+  right: 130px;
+}
+
+.after {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+}
+
+.after span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.after span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0px;
+  transition: 0.5s;
+}
+
+.after:hover span {
+  padding-right: 25px;
+}
+
+.after:hover span:after {
+  opacity: 1;
+  right: -30px;
+}
+
+.floating-box{
+	display:inline-block;
+	width:300px;
+	height:340px;
+	margin:10px;
+	padding-bottom:40px;
+	margin-bottom:30px;
+	cursor:pointer;
+}
+.floating-box:hover{
+  transition: 0.4s;
+  opacity: 0.6;
+}
+.floating-box #title{
+  color:black;
+  font-family:sans-serif;
+  font-size: :25px;
+  font-weight: bold;
+}
+.floating-box #price{
+  padding-right: 28px;
+  color:black;
+  text-align: right;
+  font-style: italic;
+  text-shadow: 1px 2px #5c5d60;
+}
+.floating-box img{
+  box-shadow: 7px 10px 15px black;
+  width: 90%;
+  height: 90%;
+
+}
+#items{
+	position:absolute;
+	left:400px;
+	top:150px;
+}
+
+#prod{
+	position:absolute;
+	left:800px;
+	top:100px;
+	background-color:gray;
+}
+
+</style>
+
+<link rel="stylesheet" href="w3.css">
+</head>
+<body>
+
+<div class="nav">
+
+    <ul>
+      <li><big><strong><a class="active" href="proj.php">HOME</a></big></strong></li>
+      <li class="dropdown">
+        <a href="#men" class="dropbtn">MEN</a>
+        <div class="dropdown-content">
+          <a href="mt1.html">T-Shirts</a>
+          <a href="ms.html">Shirts</a>
+          <a href="mb.html">Bottoms</a>
+          <a href="mspo.html">Sportswear</a>
+          <a href="ma.html">Accessories</a>
+          <a href="mf.html">Footwear</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#women" class="dropbtn">WOMEN</a>
+        <div class="dropdown-content">
+            <a href="we.html">Ethnicwear</a>
+            <a href="wt.html">Tops</a>
+            <a href="ws.html">Skirts and Dresses</a>
+            <a href="wb.html">Bottomwear</a>
+            <a href="wa.html">Accessories</a>
+            <a href="wf.html">Footwear</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#shoes" class="dropbtn">FOOTWEAR</a>
+        <div class="dropdown-content">
+          <a href="wf.html">Women's Footwear</a>
+          <a href="mf.html">Men's Footwear</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#acc" class="dropbtn">ACCESSORIES</a>
+        <div class="dropdown-content">
+          <a href="wa.html">Women's Accessories</a>
+          <a href="ma.html">Men's Accessories</a>
+        </div>
+      </li>
+    </ul>
+</div>
+<div class="sidebar">
+<ul>
+  <li><a  class="active" href="mtnew.html">T-Shirts</a></li>
+  <li><a href="ms.html">Shirts</a></li>
+  <li><a href="mb.html">Bottoms</a></li>
+  <li><a  href="mspo.html">Sportswear</a></li>
+  <li>  <a href="ma.html">Accessories</a></li>
+  <li><a href="mf.html">Footwear</a></li>
+</ul>
+</div>
+
+<div class="mySlides">
+	<div id="items">
+
+		<div class="floating-box"  onclick="productinfo(1)"><img id="image" src="MT/mt1.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box"  onclick="productinfo(3)"><img id="image" src="MT/mt2.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(5)"><img id="image" src="MT/mt3.jpg" alt="merch"/>
+				<p id="title">Captain America Shield T-shirt, blue</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(7)"><img id="image" src="MT/mt4.jpg" alt="merch"/>
+					<p id="title">Doctor Strange t-shirt</p> <p id="price">Rs.499</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(9)"><img id="image" src="MT/mt5.jpg" alt="merch"/>
+						<p id="title">The Incredible Hulk t-shirt</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(11)"><img id="image" src="MT/mt6.jpg" alt="merch"/>
+						<p id="title">Iron Man T-shirt</p> <p id="price">Rs.559</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(13)"><img id="image" src="MT/mt7.jpg" alt="merch"/>
+					<p id="title">Marvel t-shirt, black</p> <p id="price">Rs.604</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(15)"><img id="image" src="MT/mt8.jpg" alt="merch"/>
+						<p id="title">Marvel comics t-shirt, grey</p> <p id="price">Rs.425</p>  </div>
+
+	</div>
+</div>
+
+<div class="mySlides">
+	<div id="items">
+
+		<div class="floating-box"  onclick="productinfo(35)"><img id="image" src="MT/mt9.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box"  onclick="productinfo(19)"><img id="image" src="MT/mt10.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(21)"><img id="image" src="MT/mt11.jpg" alt="merch"/>
+				<p id="title">Captain America Shield T-shirt, blue</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(23)"><img id="image" src="MT/mt12.jpg" alt="merch"/>
+					<p id="title">Doctor Strange t-shirt</p> <p id="price">Rs.499</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(25)"><img id="image" src="MT/mt13.jpg" alt="merch"/>
+						<p id="title">The Incredible Hulk t-shirt</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(27)"><img id="image" src="MT/mt14.jpg" alt="merch"/>
+						<p id="title">Iron Man T-shirt</p> <p id="price">Rs.559</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(29)"><img id="image" src="MT/mt15.jpg" alt="merch"/>
+					<p id="title">Marvel t-shirt, black</p> <p id="price">Rs.604</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(31)"><img id="image" src="MT/mt16.jpg" alt="merch"/>
+						<p id="title">Marvel comics t-shirt, grey</p> <p id="price">Rs.425</p>  </div>
+
+	</div>
+</div>
+
+<div class="mySlides">
+	<div id="items">
+
+		<div class="floating-box"  onclick="productinfo(35)"><img id="image" src="MT/mt17.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box"  onclick="productinfo(35)"><img id="image" src="MT/mt18.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(37)"><img id="image" src="MT/mt19.jpg" alt="merch"/>
+				<p id="title">Captain America Shield T-shirt, blue</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(39)"><img id="image" src="MT/mt20.jpg" alt="merch"/>
+					<p id="title">Doctor Strange t-shirt</p> <p id="price">Rs.499</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(41)"><img id="image" src="MT/mt21.jpg" alt="merch"/>
+						<p id="title">The Incredible Hulk t-shirt</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(43)"><img id="image" src="MT/mt22.jpg" alt="merch"/>
+						<p id="title">Iron Man T-shirt</p> <p id="price">Rs.559</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(45)"><img id="image" src="MT/mt23.jpg" alt="merch"/>
+					<p id="title">Marvel t-shirt, black</p> <p id="price">Rs.604</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(47)"><img id="image" src="MT/mt24.jpg" alt="merch"/>
+						<p id="title">Marvel comics t-shirt, grey</p> <p id="price">Rs.425</p>  </div>
+
+	</div>
+</div>
+
+<div class="mySlides">
+	<div id="items">
+
+		<div class="floating-box"  onclick="productinfo(35)"><img id="image" src="MT/mt25.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box"  onclick="productinfo(51)"><img id="image" src="MT/mt26.jpg" alt="merch"/>
+				<p id="title">Guardians of the Galaxy T-shirt, grey</p> <p id="price">Rs.405</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(53)"><img id="image" src="MT/mt27.jpg" alt="merch"/>
+				<p id="title">Captain America Shield T-shirt, blue</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(55)"><img id="image" src="MT/mt28.jpg" alt="merch"/>
+					<p id="title">Doctor Strange t-shirt</p> <p id="price">Rs.499</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(57)"><img id="image" src="MT/mt29.jpg" alt="merch"/>
+						<p id="title">The Incredible Hulk t-shirt</p> <p id="price">Rs.599</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(59)"><img id="image" src="MT/mt30.jpg" alt="merch"/>
+						<p id="title">Iron Man T-shirt</p> <p id="price">Rs.559</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(61)"><img id="image" src="MT/mt31.jpg" alt="merch"/>
+					<p id="title">Marvel t-shirt, black</p> <p id="price">Rs.604</p>  </div>
+
+		<div class="floating-box" onclick="productinfo(63)"><img id="image" src="MT/mt32.jpg" alt="merch"/>
+						<p id="title">Marvel comics t-shirt, grey</p> <p id="price">Rs.425</p>  </div>
+
+	</div>
+</div>
+
+
+<div id='prod' style="opacity:0;z-index:-1">
+			<div id="prodimg"><img id='prodpic' src="" alt="merch" /></div>
+			<div id='close' onclick="closeproduct()"style="align:top-right">X</div>
+
+		<div id='desc'>
+			<p id='prodtitle' style="color:white">TITLE</p>
+			<p id='prodabout' style="color:white">Description</p>
+			<p id='prodprice'style="color:white">PRICE</p>
+
+			<div id='size'style="color:black">SIZE:
+			<select name="size">
+				<option value="XS"style="color:black">XS</option>
+				<option value="S"style="color:black">S</option>
+				<option value="M"style="color:black">M</option>
+				<option value="L"style="color:black">L</option>
+				<option value="XL"style="color:black">XL</option>
+			</select>
+			<br>
+			<button id="confirm">Proceed to checkout</button>
+			</div>
+
+		</div>
+
+</div>
+
+<button class="before"style="vertical-align:middle" onclick="plusDivs(-1)"><span>Previous</span></button>
+<button class="after" style="vertical-align:middle" onclick="plusDivs(1)"><span>Next</span></button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+
+function productinfo(i){
+  var product=document.getElementById("prod");
+  product.style.opacity=200;
+  product.style.zIndex=4;
+  product.style.transition='0.6s';
+  var prodpicture=document.getElementById("items").childNodes[i].firstChild.src;
+  document.getElementById("prodpic").src=prodpicture;
+  var productname=document.getElementById("items").childNodes[i].childNodes[2].textContent;
+  document.getElementById("prodtitle").innerHTML=productname;
+  var productprice=document.getElementById("items").childNodes[i].childNodes[4].textContent;
+  document.getElementById("prodprice").innerHTML="Price: "+productprice;
+  var productdesc=document.getElementById("items").childNodes[i].lastChild.textContent;
+  document.getElementById("prodabout").innerHTML="Description: "+productdesc;
+}
+
+function closeproduct(){
+  var product=document.getElementById("prod");
+  product.style.opacity=0;
+  product.style.zIndex=-1;
+  product.style.transition='0s';
+}
+</script>
+
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_black_fixed by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Mar 2016 11:04:36 GMT -->
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="stuff.css">
+<style>
+  button.accordion {
+      background-color: ghostwhite;
+      color: black;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+  }
+  body{background-image: url("bg2.jpg");font-family: sans-serif;color:black;margin:0px !important;}
+  button.accordion.active, button.accordion:hover {
+      background-color: teal;
+  }
+  
+  div.panel {
+      padding: 0 18px;
+      background-color: lightgray;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+  }
+</style>
+</head>
+<body>
+  <div class="nav">
+
+      <ul>
+        <li><big><strong><a class="active" href="proj.php">HOME</a></big></strong></li>
+        <li class="dropdown">
+          <a href="men.php" class="dropbtn">MEN</a>
+          <div class="dropdown-content">
+            <a href="mt.php?name=MT">T-Shirts</a>
+            <a href="ms.php?name=MS">Shirts</a>
+            <a href="mb.php?name=MB">Bottoms</a>
+            <a href="mspo.php?name=MSPO">Sportswear</a>
+            <a href="ma.php?name=MA">Accessories</a>
+            <a href="mf.php?name=MF">Footwear</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="women.php" class="dropbtn">WOMEN</a>
+          <div class="dropdown-content">
+              <a href="we.php?name=WE">Ethnicwear</a>
+              <a href="wt.php?name=WT">Tops</a>
+              <a href="ws.php?name=WS">Skirts and Dresses</a>
+              <a href="wb.php?name=WB">Bottomwear</a>
+              <a href="wa.php?name=WA">Accessories</a>
+              <a href="wf.php?name=WF">Footwear</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn">FOOTWEAR</a>
+          <div class="dropdown-content">
+            <a href="wf.php?name=WF">Women's Footwear</a>
+            <a href="mf.php?name=MF">Men's Footwear</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn">ACCESSORIES</a>
+          <div class="dropdown-content">
+            <a href="wa.php?name=WA">Women's Accessories</a>
+            <a href="ma.php?name=MA">Men's Accessories</a>
+          </div>
+        </li>
+        <li  id="cart">
+
+          <a href="cart.php">CART</a>
+      </li>
+        <li style="float:right;" >
+
+          <a href="logout.php"  >LOGOUT</a>
+        </li>
+      </ul>
+  </div>
+<br><br>
+<div class="heading">
+  <br>
+	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="fontname.png"></h1></a></center>
+</div>
+<center>
+<h1 style="padding-top:20px; color:white">FREQUENTLY ASKED QUESTIONS</h1>
+</center>
+<br><br>
+<button class="accordion">ABOUT</button>
+
+<div class="panel" id="panel1">
+
+  <p>THIS IS SHOP is a young and vibrant company that aims to provide good quality branded products. We cater to the fashion needs of men and women,
+  for items spanning across footwear, apparel and accessories.
+  At THIS IS SHOP we strive to achieve the highest level of customer satisfaction possible.
+  </p>
+
+</div>
+
+<button class="accordion">CONTACT</button>
+<div class="panel" id="panel2">
+  <p>9726187364</p>
+</div>
+
+<button class="accordion">ORDER TRACKING</button>
+<div class="panel" id="panel6">
+  <p>To keep a track of your order, use our Track Order facility on the top right side of our home page.
+Track order via SMS-
+Send OS(space)(last five digits of your order number) to 9949933333.
+Example: OS 12345 where 12345 are the last 5 digits of your order number.
+You can also refer to the email and SMS sent by us to track the movement of your order.</p>
+</div>
+<button class="accordion">RETURN</button>
+
+<div class="panel" id="panel3">
+
+  <p>You may return a part of the Order, in case of multiple items in an order. Any product being returned needs to be returned in full including all components as well as any complimentary gifts or products which came along with it.
+However, if your purchase was made in the period of a special promotional offer, contests or any special scheme then special rules might apply for returns..</p>
+
+</div>
+
+
+<button class="accordion">SHIPPING</button>
+
+<div class="panel" id="panel4">
+
+  <p>We strive to deliver your orders at your doorstep as swiftly as possible, in accordance to our Shipping Policy. You can enjoy free shipping(handling) on your first order or on all orders above INR 749. So, if this is your first order with us, we will waive off the shipping charges as a gesture of goodwill. Shipping charges are also at times waived off on Special Occassions, which are decided by This Is Shop.</p>
+
+</div>
+<button class="accordion">CANCELLATION</button>
+
+<div class="panel" id="panel5">
+
+  <p>You can cancel one/few items from your order by clicking on "My Orders" section of your account and then select the item(s) you want to cancel. You will be given a refund.</p>
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  }
+}
+</script>
+
+</body>
+</html>
