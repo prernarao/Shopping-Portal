@@ -7,7 +7,8 @@
     <style>
 
       body {margin:0;
-    	background-image:url("bg2.jpg");
+    	/* background-image:url("bg2.jpg"); */
+      background:black;
 
     }
 

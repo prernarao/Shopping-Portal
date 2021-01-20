@@ -54,7 +54,10 @@
   .dropdown:hover .dropdown-content {
       display: block;
   }
-body{background-image:url("bg2.jpg");color:white;}
+body{
+  /* background-image:url("bg2.jpg"); */
+  background:black;
+  color:white;}
 
   .main {
       margin-top: 1000px; /* Add a top margin to avoid content overlay */

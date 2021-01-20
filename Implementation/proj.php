@@ -28,7 +28,8 @@
     text-decoration: none;
 }
   body {margin:0;
-	background-image:url("bg2.jpg");
+	/* background:url("bg2.jpg"); */
+  background:black;
     color: white;
   }
 
@@ -124,8 +125,9 @@
 <a href="men.php"><img class="mySlides" src="p1.jpg" style="width:100%; height:100%;"></a>
 <a href="women.php"><img class="mySlides" src="p2.jpg" style="width:100%; height:100%;"></a>
 
-<a class="w3-btn-floating" style="position:absolute;top:45%;left:7%" onclick="plusDivs(-1)"><</a>
-<a class="w3-btn-floating" style="position:absolute;top:45%;right:7%" onclick="plusDivs(1)">></a>
+<a style="position:absolute;top:45%;left:7%;border-radius:60%" onclick="plusDivs(-1)"><button style="background:black;border:none">&#8592;</button></a>
+<!-- <a class="w3-btn-floating" style="position:absolute;top:45%;right:7%" onclick="plusDivs(1)">&#8594;</a> -->
+<a style="position:absolute;top:45%;right:7%;border-radius:60%" onclick="plusDivs(-1)"><button style="background:black;border:none">&#8594;</button></a>
 
 </center>
 </div>

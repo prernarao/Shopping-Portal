@@ -38,7 +38,9 @@
       padding-right: 40px;
       text-align: left;
   }
-  body{background-image:url("bg2.jpg");color:white;}
+  body{
+    /* background-image:url("bg2.jpg"); */background:black;
+    color:white;}
   .dropdown-content {
       display: none;
       position: relative;

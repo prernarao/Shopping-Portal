@@ -1,36 +1,69 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
 
     <link rel="stylesheet" type="text/css" href="stuff.css">
-<style>
-  button.accordion {
-      background-color: ghostwhite;
-      color: black;
-      cursor: pointer;
-      padding: 18px;
-      width: 100%;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 15px;
-      transition: 0.4s;
-  }
-  body{background-image: url("bg2.jpg");font-family: sans-serif;color:black;margin:0px !important;}
-  button.accordion.active, button.accordion:hover {
-      background-color: teal;
-  }
-  
-  div.panel {
-      padding: 0 18px;
-      background-color: lightgray;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.2s ease-out;
-  }
-</style>
-</head>
-<body>
+<style>
+
+  button.accordion {
+
+      background-color: ghostwhite;
+
+      color: black;
+
+      cursor: pointer;
+
+      padding: 18px;
+
+      width: 100%;
+
+      border: none;
+
+      text-align: left;
+
+      outline: none;
+
+      font-size: 15px;
+
+      transition: 0.4s;
+
+  }
+
+  
+body{
+  /* background-image: url("bg2.jpg"); */background:black;
+  font-family: sans-serif;color:black;margin:0px !important;}
+  button.accordion.active, button.accordion:hover {
+
+      background-color: teal;
+
+  }
+
+  
+
+  div.panel {
+
+      padding: 0 18px;
+
+      background-color: lightgray;
+
+      max-height: 0;
+
+      overflow: hidden;
+
+      transition: max-height 0.2s ease-out;
+
+  }
+
+</style>
+
+</head>
+
+<body>
+
   <div class="nav">
 
       <ul>
@@ -87,7 +120,8 @@
 	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="fontname.png"></h1></a></center>
 </div>
 <center>
-<h1 style="padding-top:20px; color:white">FREQUENTLY ASKED QUESTIONS</h1>
+<h1 style="padding-top:20px; color:white">FREQUENTLY ASKED QUESTIONS</h1>
+
 </center>
 <br><br>
 <button class="accordion">ABOUT</button>
@@ -101,19 +135,28 @@
 
 </div>
 
-<button class="accordion">CONTACT</button>
-<div class="panel" id="panel2">
-  <p>9726187364</p>
-</div>
-
-<button class="accordion">ORDER TRACKING</button>
-<div class="panel" id="panel6">
+<button class="accordion">CONTACT</button>
+
+<div class="panel" id="panel2">
+
+  <p>9726187364</p>
+
+</div>
+
+
+
+<button class="accordion">ORDER TRACKING</button>
+
+<div class="panel" id="panel6">
+
   <p>To keep a track of your order, use our Track Order facility on the top right side of our home page.
 Track order via SMS-
 Send OS(space)(last five digits of your order number) to 9949933333.
 Example: OS 12345 where 12345 are the last 5 digits of your order number.
-You can also refer to the email and SMS sent by us to track the movement of your order.</p>
-</div>
+You can also refer to the email and SMS sent by us to track the movement of your order.</p>
+
+</div>
+
 <button class="accordion">RETURN</button>
 
 <div class="panel" id="panel3">
@@ -139,22 +182,41 @@ However, if your purchase was made in the period of a special promotional offer,
 
 </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  }
-}
-</script>
-
-</body>
-</html>
+<script>
+
+var acc = document.getElementsByClassName("accordion");
+
+var i;
+
+
+
+for (i = 0; i < acc.length; i++) {
+
+  acc[i].onclick = function() {
+
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
+
+    if (panel.style.maxHeight){
+
+      panel.style.maxHeight = null;
+
+    } else {
+
+      panel.style.maxHeight = panel.scrollHeight + "px";
+
+    }
+
+  }
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
+

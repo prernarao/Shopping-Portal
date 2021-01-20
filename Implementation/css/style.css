@@ -1,4 +1,6 @@
-body {font-family:Arial, Sans-Serif;background-image:url("bg2.jpg");color:#d7e6ef;}
+body {font-family:Arial, Sans-Serif;
+  /* background-image:url("bg2.jpg"); */background:black;
+  color:#d7e6ef;}
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 a {color:pink; text-decoration:none;}
