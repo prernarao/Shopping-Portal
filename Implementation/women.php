@@ -83,8 +83,8 @@ body{
   .btn:hover{color:black!important;background-color:#ccc!important}
   body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" type="text/css" href="stuff.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" type="text/css" href="css/stuff.css">
 </head>
 <body >
 
@@ -145,12 +145,12 @@ body{
 
 <div class="heading">
   <br>
-	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="fontname.png"></h1></a></center>
+	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="images/fontname.png" style="margin-top:50px;"></h1></a></center>
 </div>
 
 
   <div class="dispp">
-    <img src="womenhp.jpg" style="width:100%">
+    <img src="images/womenhp.jpg" style="width:100%">
     <div style="position:absolute;left:0;top:0;padding:24px 48px 0px 10%">
       <h1 style="color:white;text-shadow:0 4px 4px 0;font-size:64px">New arrivals</h1>
       <h1 style="color:white;text-shadow:0 4px 4px 0;">COLLECTION 2017</h1>
@@ -164,29 +164,29 @@ body{
   <center>
   <div style="padding:0 8px">
     <div class="bodyclass" style="display:inline-block;">
-        <a href="wt.php?name=WT"><img src="WT/wt1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="wt.php?name=WT"><img src="item_images/WT/wt1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Tops</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="wb.php?name=WB"><img src="WB/wb1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="wb.php?name=WB"><img src="item_images/WB/wb1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Bottoms</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="wf.php?name=WF"><img src="WF/wf1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="wf.php?name=WF"><img src="item_images/WF/wf1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Footwear</p>
     </div>
   </div>
   <div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="we.php?name=WE"><img src="WE/we1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="we.php?name=WE"><img src="item_images/WE/we1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Ethnic</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="ws.php?name=WS"><img src="WSD/wsd1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="ws.php?name=WS"><img src="item_images/WSD/wsd1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Skirts and Dresses</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="wa.php?name=WA"><img src="WA/wa1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="wa.php?name=WA"><img src="item_images/WA/wa1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Accessories</p>
     </div>
 

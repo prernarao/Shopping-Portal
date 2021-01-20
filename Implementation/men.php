@@ -84,8 +84,8 @@
   .btn:hover{color:black!important;background-color:#ccc!important}
   body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
-<link rel="stylesheet" href="w3.css">
-<link rel="stylesheet" type="text/css" href="stuff.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" type="text/css" href="css/stuff.css">
 </head>
 <body >
 
@@ -146,7 +146,7 @@
 
 <div class="heading">
   <br>
-	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="fontname.png"></h1></a></center>
+	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="images/fontname.png" style="margin-top:50px;"></h1></a></center>
 </div>
 
 
@@ -164,7 +164,7 @@
   <!-- Image header -->
 
   <div class="dispp" >
-    <img src="whpkid.jpg" style="width:100%">
+    <img src="images/whpkid.jpg" style="width:100%">
     <div style="position:absolute;left:0;top:0;padding:24px 48px 0px 10%">
       <h1 style="color:white;text-shadow:0 4px 4px 0;font-size:64px">New arrivals</h1>
       <h1 style="color:white;text-shadow:0 4px 4px 0;">COLLECTION 2017</h1>
@@ -178,29 +178,29 @@
   <center>
   <div style="padding:0 8px">
     <div class="bodyclass" style="display:inline-block;">
-        <a href="mt.php?name=MT"><img src="MT/mt1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="mt.php?name=MT"><img src="item_images/MT/mt1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>T-Shirts</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="mb.php?name=MB"><img src="MB/mb1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="mb.php?name=MB"><img src="item_images/MB/mb1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Bottoms</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="mf.php?name=MF"><img src="MF/mf1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="mf.php?name=MF"><img src="item_images/MF/mf1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Footwear</p>
     </div>
   </div>
   <div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="ma.php?name=MA"><img src="MA/ma1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="ma.php?name=MA"><img src="item_images/MA/ma1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Accessories</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="mspo.php?name=MSPO"><img src="MSPO/ms1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="mspo.php?name=MSPO"><img src="item_images/MSPO/ms1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Sportswear</p>
     </div>
     <div class="bodyclass" style="display:inline-block;">
-        <a href="ms.php?name=MS"><img src="MS/ms1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
+        <a href="ms.php?name=MS"><img src="item_images/MS/ms1.jpg" style="box-shadow: 0 4px 10px 0;width:250px"></a>
         <p>Shirts</p>
     </div>
 

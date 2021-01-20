@@ -31,7 +31,7 @@
     }else{
 ?>
 <center>
-<img src="fontname.png" >
+<img src="images/fontname.png" >
 <br><br>
 <div class="form" >
 <h1>Log In</h1>

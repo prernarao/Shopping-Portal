@@ -3,7 +3,7 @@
 <?php require 'itemdisp.php' ?>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="stuff.css">
+<link rel="stylesheet" type="text/css" href="css/stuff.css">
 <style>
 
 body {margin:0;}
@@ -93,7 +93,7 @@ body {margin:0;}
 
 </style>
 
-<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="css/w3.css">
 </head>
 <body>
 

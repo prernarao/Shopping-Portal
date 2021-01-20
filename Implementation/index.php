@@ -12,7 +12,7 @@ include("auth.php"); //include auth.php file on all secure pages ?>
         else {
             $target='login.php';
         }
-        echo "<a href='".$target."' style='position:absolute;top:35%;left:20%;'><img src='fontname.png' ></a>";
+        echo "<a href='".$target."' style='position:absolute;top:35%;left:20%;'><img src='images/fontname.png' ></a>";
     ?>
 </body>
 </html>

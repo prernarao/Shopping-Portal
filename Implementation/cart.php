@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="stuff.css">
-    <link rel="stylesheet" type="text/css" href="cartcss.css">
+    <link rel="stylesheet" type="text/css" href="css/stuff.css">
+    <link rel="stylesheet" type="text/css" href="css/cartcss.css">
     <style>
 
       body {margin:0;
@@ -83,7 +83,7 @@
           z-index: -1;
       }
       .some {
-        background-image: url("bg2.jpg");
+        /* background-image: url("bg2.jpg"); */
         max-width:10000px;
         max-height: 10000px;
 
@@ -115,7 +115,7 @@
 
     </style>
 
-    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="css/w3.css">
 </head>
 <body>
     <div class="nav">
@@ -172,7 +172,7 @@
 
     <div class="heading">
       <br>
-    	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="fontname.png"></h1></a></center>
+    	<a class="active" href="proj.php" style="text-decoration:none;"><h1><center><img src="images/fontname.png"></h1></a></center>
     </div>
     <div id = 'sc' class="shopping-cart">
         <div class="title" style="font-size:20px;">

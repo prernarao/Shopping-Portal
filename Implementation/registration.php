@@ -35,7 +35,7 @@
             echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
         }else{
 			echo '<center>';
-			echo '<img src="fontname.png" >';
+			echo '<img src="images/fontname.png" >';
 			echo '<br><br>';
 			echo '<div class="form" >';
 			echo '<h1>Registration</h1>';
@@ -53,7 +53,7 @@
     }else{
 ?>
 <center>
-<img src="fontname.png" >
+<img src="images/fontname.png" >
 <br><br>
 <div class="form">
 <h1>Registration</h1>
@@ -63,6 +63,7 @@
 <input type="password" name="password" placeholder="Password" required />
 <input type="submit" name="submit" value="Register" />
 </form>
+<p>Already registered? <a href='login.php'>Login Here</a></p>
 </center>
 <br /><br />
 
